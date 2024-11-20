@@ -1,8 +1,20 @@
 function mincost(arr)
 { 
-//write your code here
-// return the min cost
-  
+
+	let cost=0;
+	if(arr.length==1)
+	{
+		return arr[0];
+	}
+	for(let i=0;i<arr.length-1;i++)
+		{
+			arr.sort();
+			cost=cost+arr[0]+arr[1];
+			arr.shift();
+			arr.shift();
+			arr.push(arr[0]+arr[1]);
+		}
+  return cost;
 }
 
 module.exports=mincost;
