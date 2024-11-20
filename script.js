@@ -10,9 +10,9 @@ function mincost(arr)
 		{
 			arr.sort();
 			cost=cost+arr[0]+arr[1];
-			arr.shift();
-			arr.shift();
 			arr.push(arr[0]+arr[1]);
+			arr.shift();
+			arr.shift();
 		}
   return cost;
 }
