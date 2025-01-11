@@ -6,7 +6,7 @@ function mincost(arr)
 	{
 		return arr[0];
 	}
-	int k=arr.length;
+	let k=arr.length;
 	for(let i=1;i<k;i++)
 		{
 			arr.sort((a,b)=> a-b);
